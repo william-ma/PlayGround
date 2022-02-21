@@ -9,7 +9,12 @@ public class PlayStreams {
 
     public void run() {
 
-        List<String> words = new ArrayList<>(List.of("apple", "banana", "carrots", "big", "g", "", " ", "pig", "rig", "st**ar", "*s*t*a*r*"));
+        List<Form> forms = new ArrayList<Form>();
+        forms.add(new Form());
+        forms.add(new Form());
+        forms.add(new Form());
+//        isValidForms(forms);
+//        List<String> words = new ArrayList<>(List.of("apple", "banana", "carrots", "big", "g", "", " ", "pig", "rig", "st**ar", "*s*t*a*r*"));
 //        for (String word: words) {
 //            System.out.println("Current word: " + word);
 //        }
@@ -24,12 +29,39 @@ public class PlayStreams {
 //        words.stream()
 //                .forEachOrdered(word -> System.out.println("Current word: " + word));
 
-        List<Integer> numbers = new ArrayList<>();
-        for (int i = -50; i <= 100; i++) {
-            numbers.add(i);
-        }
-        moreStreams(numbers);
+//        List<Integer> numbers = new ArrayList<>();
+//        for (int i = -50; i <= 100; i++) {
+//            numbers.add(i);
+//        }
+//        moreStreams(numbers);
     }
+
+//    private boolean isValidForms(List<Form> forms) {
+//        boolean isValid = true;
+//        for (Form f : forms) {
+//            if (!isValidForm(f)) {
+//                isValid = false;
+//            }
+//        }
+//        return isValid;
+//    }
+
+//    private boolean isValidForms(List<Form> forms) {
+//
+//        List<Integer> streams = new ArrayList<>();
+//        streams.stream().allMatch(i -> i > 0);
+//
+//        return forms.stream().allMatch(form ->
+//                isValidFirstName(form.getFirstName()) &&
+//                isValidLastName(form.getLastName()) &&
+//                form.isAgreeToTOC());
+//        List<Node> transformedNodes =
+//                nodes.streams().map(this::transformNode).toList();
+//    }
+//
+//    private boolean isValidForm(Form form) {
+//
+//    }
 
     private List<String> usingCollections(List<String> words) {
         List<String> transformedList = new ArrayList<>();
